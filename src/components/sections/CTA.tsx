@@ -30,7 +30,7 @@ const CTA = () => {
         } : {}} transition={{
           duration: 0.6
         }} className="mb-8 flex justify-center">
-            <img src={logoImage} alt="Corporativo Jurídico Sánchez" className="w-70 h-70" />
+            <img src={logoImage} alt="Corporativo Jurídico Sánchez" className="w-40 h-40" />
           </motion.div>
 
           {/* Content */}
