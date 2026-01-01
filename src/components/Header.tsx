@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Scale, Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoImage from "@/assets/logo.webp";
 
 const navItems = [
   { label: "Experiencia", href: "#experiencia" },
@@ -40,9 +41,11 @@ const Header = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <a href="#" className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center border border-gold/30">
-                <Scale className="w-5 h-5 text-gold" />
-              </div>
+              <img 
+                src={logoImage} 
+                alt="Corporativo Jurídico Sánchez" 
+                className="w-10 h-10"
+              />
               <span className="font-display text-lg font-semibold text-primary-foreground hidden sm:block">
                 Corporativo Jurídico Sánchez
               </span>
