@@ -99,7 +99,7 @@ const Contact = () => {
             className="h-[400px] lg:h-full min-h-[400px] rounded-lg overflow-hidden shadow-card"
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.8847068066687!2d-99.9089!3d16.8531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ca6e944cc33f2f%3A0x1d7d1d4b9d8d8d8d!2sAcapulco%20de%20Ju%C3%A1rez%2C%20Gro.!5e0!3m2!1ses!2smx!4v1699999999999!5m2!1ses!2smx"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d4541.015770441472!2d-99.90878532663442!3d16.849959834624226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTbCsDUxJzAwLjkiTiA5OcKwNTQnMjguMSJX!5e0!3m2!1ses-419!2smx!4v1767284995492!5m2!1ses-419!2smx"
               width="100%"
               height="100%"
               style={{ border: 0 }}
