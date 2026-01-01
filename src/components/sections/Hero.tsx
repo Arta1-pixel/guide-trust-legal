@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Phone, Scale } from "lucide-react";
+import { Phone } from "lucide-react";
 import heroImage from "@/assets/hero-office.png";
+import logoImage from "@/assets/logo.webp";
 
 const Hero = () => {
   return (
@@ -25,16 +26,18 @@ const Hero = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="flex flex-col items-center"
         >
-          {/* Logo/Icon */}
+          {/* Logo */}
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.6 }}
             className="mb-8"
           >
-            <div className="w-20 h-20 rounded-full bg-gold/20 flex items-center justify-center border border-gold/30">
-              <Scale className="w-10 h-10 text-gold" />
-            </div>
+            <img 
+              src={logoImage} 
+              alt="Corporativo Jurídico Sánchez" 
+              className="w-28 h-28 md:w-36 md:h-36"
+            />
           </motion.div>
 
           {/* Tagline */}
