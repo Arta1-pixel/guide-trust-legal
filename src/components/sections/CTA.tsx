@@ -2,7 +2,8 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { Phone, Mail, Scale } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
+import logoImage from "@/assets/logo.webp";
 
 const CTA = () => {
   const ref = useRef(null);
@@ -26,9 +27,11 @@ const CTA = () => {
             transition={{ duration: 0.6 }}
             className="mb-8 flex justify-center"
           >
-            <div className="w-20 h-20 rounded-full bg-gold/20 flex items-center justify-center border border-gold/30">
-              <Scale className="w-10 h-10 text-gold" />
-            </div>
+            <img 
+              src={logoImage} 
+              alt="Corporativo Jurídico Sánchez" 
+              className="w-20 h-20"
+            />
           </motion.div>
 
           {/* Content */}
