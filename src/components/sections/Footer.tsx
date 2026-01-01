@@ -1,4 +1,4 @@
-import { Scale } from "lucide-react";
+import logoImage from "@/assets/logo.webp";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,9 +9,11 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center">
-              <Scale className="w-5 h-5 text-gold" />
-            </div>
+            <img 
+              src={logoImage} 
+              alt="Corporativo Jurídico Sánchez" 
+              className="w-10 h-10"
+            />
             <div>
               <span className="font-display text-lg font-semibold text-primary-foreground">
                 Corporativo Jurídico Sánchez
