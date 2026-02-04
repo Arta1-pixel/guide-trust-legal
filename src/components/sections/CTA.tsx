@@ -71,7 +71,7 @@ const CTA = () => {
               </a>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
-              <a href="mailto:corp.lunasanchez@gmail.com" className="flex items-center gap-3">
+              <a className="flex items-center gap-3" href="mailto:oficina@juridico-sanchez.com">
                 <Mail className="w-5 h-5" />
                 Escríbenos
               </a>
