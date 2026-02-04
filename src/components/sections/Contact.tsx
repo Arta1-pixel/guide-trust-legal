@@ -2,21 +2,25 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-
 const Contact = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
-
-  return (
-    <section ref={ref} className="section-padding bg-cream" id="ubicacion">
+  const isInView = useInView(ref, {
+    once: true,
+    margin: "-100px"
+  });
+  return <section ref={ref} className="section-padding bg-cream" id="ubicacion">
       <div className="container-narrow">
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Info */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6 }}
-          >
+          <motion.div initial={{
+          opacity: 0,
+          x: -30
+        }} animate={isInView ? {
+          opacity: 1,
+          x: 0
+        } : {}} transition={{
+          duration: 0.6
+        }}>
             <span className="text-gold font-body text-sm tracking-[0.15em] uppercase mb-4 block">
               Ubicación
             </span>
@@ -49,10 +53,7 @@ const Contact = () => {
                   <h3 className="font-display text-lg font-semibold text-foreground mb-1">
                     Teléfono
                   </h3>
-                  <a 
-                    href="tel:7441580181" 
-                    className="font-body text-muted-foreground hover:text-gold transition-colors"
-                  >
+                  <a href="tel:7441580181" className="font-body text-muted-foreground hover:text-gold transition-colors">
                     744 158 0181
                   </a>
                 </div>
@@ -66,12 +67,7 @@ const Contact = () => {
                   <h3 className="font-display text-lg font-semibold text-foreground mb-1">
                     Correo electrónico
                   </h3>
-                  <a 
-                    href="mailto:corp.lunasanchez@gmail.com" 
-                    className="font-body text-muted-foreground hover:text-gold transition-colors"
-                  >
-                    corp.lunasanchez@gmail.com
-                  </a>
+                  <a href="mailto:corp.lunasanchez@gmail.com" className="font-body text-muted-foreground hover:text-gold transition-colors">oficina@juridico-sanchez.com</a>
                 </div>
               </div>
 
@@ -92,27 +88,22 @@ const Contact = () => {
           </motion.div>
 
           {/* Map */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ delay: 0.2, duration: 0.6 }}
-            className="h-[400px] lg:h-full min-h-[400px] rounded-lg overflow-hidden shadow-card"
-          >
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d4541.015770441472!2d-99.90878532663442!3d16.849959834624226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTbCsDUxJzAwLjkiTiA5OcKwNTQnMjguMSJX!5e0!3m2!1ses-419!2smx!4v1767284995492!5m2!1ses-419!2smx"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Ubicación de Corporativo Jurídico Sánchez"
-            />
+          <motion.div initial={{
+          opacity: 0,
+          x: 30
+        }} animate={isInView ? {
+          opacity: 1,
+          x: 0
+        } : {}} transition={{
+          delay: 0.2,
+          duration: 0.6
+        }} className="h-[400px] lg:h-full min-h-[400px] rounded-lg overflow-hidden shadow-card">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d4541.015770441472!2d-99.90878532663442!3d16.849959834624226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTbCsDUxJzAwLjkiTiA5OcKwNTQnMjguMSJX!5e0!3m2!1ses-419!2smx!4v1767284995492!5m2!1ses-419!2smx" width="100%" height="100%" style={{
+            border: 0
+          }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Ubicación de Corporativo Jurídico Sánchez" />
           </motion.div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
