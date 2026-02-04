@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import heroImage from "@/assets/hero-office.png";
-import logoImage from "@/assets/logo.webp";
+import logoImage from "@/assets/logo.png";
 const Hero = () => {
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-primary">
       {/* Background Image */}
