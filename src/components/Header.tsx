@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logoImage from "@/assets/logo.webp";
+import logoImage from "@/assets/logo.png";
 
 const navItems = [
   { label: "Experiencia", href: "#experiencia" },

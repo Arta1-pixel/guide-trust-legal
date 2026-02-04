@@ -3,7 +3,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail } from "lucide-react";
-import logoImage from "@/assets/logo.webp";
+import logoImage from "@/assets/logo.png";
 const CTA = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, {
