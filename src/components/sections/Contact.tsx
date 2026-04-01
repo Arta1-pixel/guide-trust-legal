@@ -67,7 +67,7 @@ const Contact = () => {
                   <h3 className="font-display text-lg font-semibold text-foreground mb-1">
                     Correo electrónico
                   </h3>
-                  <a href="mailto:corp.lunasanchez@gmail.com" className="font-body text-muted-foreground hover:text-gold transition-colors">oficina@juridico-sanchez.com</a>
+                  <a href="mailto:oficina@juridico-sanchez.com" className="font-body text-muted-foreground hover:text-gold transition-colors">oficina@juridico-sanchez.com</a>
                 </div>
               </div>
 
